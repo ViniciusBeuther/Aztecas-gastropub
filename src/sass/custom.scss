@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -58,7 +59,7 @@ header{
     }
     
   }
-
+  
   .nav-item:hover{
     scale: 1.025;
     transition: .5s;
