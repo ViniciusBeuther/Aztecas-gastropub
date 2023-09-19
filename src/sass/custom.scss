@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$theme-colors: (
+  "primary": #a7e43f,
+  "danger": #ff4136,
+  "custom": #58c1d3
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
