@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+// SASS Variables
+$main_color: #FFCD1A;
+$secundary_color: #180E04;
+$white_color: #F0F0F0;
+
+
 $theme-colors: (
-  "primary": #a7e43f,
+  "primary": $main_color,
   "danger": #ff4136,
-  "custom": #58c1d3
+  "dark_bg": $secundary_color,
+  "white": $white_color
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"
