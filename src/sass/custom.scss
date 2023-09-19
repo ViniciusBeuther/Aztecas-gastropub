@@ -17,4 +17,22 @@ $theme-colors: (
   "white": $white_color
 );
 
+.btn-style{
+  background-color: $secundary_color;
+  color: $white_color;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+}
+
+header{
+  color: $secundary_color;
+
+  .dropdown-item:hover{
+    background-color: $main_color;
+    transition: .5s;
+  }
+}
+
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"

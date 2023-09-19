@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+.btn-style {
+  background-color: #180E04;
+  color: #F0F0F0;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+}
+
+header {
+  color: #180E04;
+}
+header .dropdown-item:hover {
+  background-color: #FFCD1A;
+  transition: 0.5s;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
