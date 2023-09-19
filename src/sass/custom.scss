@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 // SASS Variables
@@ -23,6 +25,16 @@ $theme-colors: (
   padding: 5px;
   border: none;
   border-radius: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn-style:hover{
+  scale: 1.025;
+  transition: 0.5s;
+  background-color: $white_color;
+  color: $secundary_color;
+  box-shadow: 0px 10px 13px -7px #180E04, 16px 13px 23px 8px rgba(24, 14, 4, 0.126);
 }
 
 header{
@@ -32,7 +44,33 @@ header{
     background-color: $main_color;
     transition: .5s;
   }
+
+  .nav-item{
+    margin: 0 10px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .nav-link{
+      color: $secundary_color;
+    }
+    
+  }
+
+  .nav-item:hover{
+    scale: 1.025;
+    transition: .5s;
+
+    .nav-link:hover{
+      color: $white_color;
+      font-weight: bold;
+    }
+  }
+
 }
 
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
