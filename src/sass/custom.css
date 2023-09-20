@@ -9,6 +9,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 .btn-style {
   background-color: #180E04;
   color: #F0F0F0;
@@ -27,9 +31,6 @@
   box-shadow: 0px 10px 13px -7px #180E04, 16px 13px 23px 8px rgba(24, 14, 4, 0.126);
 }
 
-header {
-  color: #180E04;
-}
 header .dropdown-item:hover {
   background-color: #FFCD1A;
   transition: 0.5s;
@@ -54,6 +55,58 @@ header .nav-item:hover .nav-link:hover {
   font-weight: bold;
 }
 
+section#home_page {
+  height: 90vh;
+  background: url(../../assets/images/home\ background-resized.jpg) center/cover no-repeat;
+}
+section#home_page h1, section#home_page .h1, section#home_page h3, section#home_page .h3 {
+  font-family: "MexicanFont", sans-serif;
+  line-height: 56.47%;
+  letter-spacing: 2.72px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+section#home_page h1, section#home_page .h1 {
+  font-size: 8.5em;
+}
+section#home_page h3, section#home_page .h3 {
+  font-size: 5.375em;
+}
+
+section#suggestion_section {
+  background-image: url(../../assets/images/background-art.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+section#suggestion_section article #main_marketing_message {
+  font-family: "MexicanFont", sans-serif;
+  font-size: 2.625em;
+  line-height: 76.8px; /* 182.857% */
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  section#home_page h1, section#home_page .h1 {
+    font-size: 3.75em;
+  }
+  section#home_page h3, section#home_page .h3 {
+    font-size: 2.75em;
+  }
+  section#suggestion_section article #main_marketing_message {
+    font-size: 1.625em;
+    letter-spacing: 0.4px;
+    line-height: 32px;
+    width: 100%;
+  }
+  section#suggestion_section article #sub_marketng_message {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 1.313em;
+    max-width: 600px;
+    width: 100%;
+  }
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11639,4 +11692,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+@font-face {
+  font-family: "MexicanFont";
+  src: url("../../assets/fonts/mexican_knappett.ttf") format("truetype");
 }/*# sourceMappingURL=custom.css.map */
