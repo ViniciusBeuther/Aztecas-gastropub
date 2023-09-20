@@ -85,7 +85,6 @@ section#suggestion_section article #main_marketing_message {
   letter-spacing: 0.84px;
   text-transform: uppercase;
 }
-
 @media (max-width: 768px) {
   section#home_page h1, section#home_page .h1 {
     font-size: 3.75em;
@@ -105,6 +104,9 @@ section#suggestion_section article #main_marketing_message {
     font-size: 1.313em;
     max-width: 600px;
     width: 100%;
+  }
+  section#suggestion_section #food_card_section div.card {
+    margin: 0px;
   }
 }
 /*!

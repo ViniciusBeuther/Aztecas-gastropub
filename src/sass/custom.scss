@@ -116,6 +116,12 @@ section#suggestion_section{
       text-transform: uppercase;
     }
   }
+
+  #food_card_section{
+    div.card{
+      
+    }
+  }
 }
 
 //Mobile adjustments
@@ -147,6 +153,12 @@ section#suggestion_section{
         font-size: 1.313em;
         max-width: 600px;
         width: 100%;
+      }
+    }
+
+    #food_card_section{
+      div.card{
+        margin: 0px;  
       }
     }
   }
