@@ -13,6 +13,10 @@ body {
   height: 100vh;
 }
 
+.mexican-font {
+  font-family: "MexicanFont", sans-serif;
+}
+
 .btn-style {
   background-color: #180E04;
   color: #F0F0F0;
@@ -85,6 +89,15 @@ section#suggestion_section article #main_marketing_message {
   letter-spacing: 0.84px;
   text-transform: uppercase;
 }
+section#suggestion_section #food_card_section h5, section#suggestion_section #food_card_section .h5 {
+  font-size: 32px;
+}
+section#suggestion_section #food_card_section .card:hover {
+  transform: translateY(-25px);
+  transition: 0.5s;
+  scale: 1.025;
+}
+
 @media (max-width: 768px) {
   section#home_page h1, section#home_page .h1 {
     font-size: 3.75em;
@@ -106,7 +119,10 @@ section#suggestion_section article #main_marketing_message {
     width: 100%;
   }
   section#suggestion_section #food_card_section div.card {
-    margin: 0px;
+    min-width: 215px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 13px -7px #cec3b8, 16px 13px 23px 8px rgba(255, 255, 255, 0.642);
   }
 }
 /*!

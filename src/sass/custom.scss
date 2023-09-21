@@ -24,6 +24,11 @@ $theme-colors: (
   "white": $white_color
 );
 
+// Class to select the mexican font
+.mexican-font{
+  font-family: "MexicanFont", sans-serif;
+}
+
 // Buttons style
 .btn-style{
   background-color: $secundary_color;
@@ -118,9 +123,17 @@ section#suggestion_section{
   }
 
   #food_card_section{
-    div.card{
-      
+    
+    h5{
+      font-size: 32px;
     }
+    .card:hover{
+      transform: translateY(-25px);
+      transition: .5s;
+      scale: 1.025;
+
+    }
+    
   }
 }
 
@@ -158,7 +171,10 @@ section#suggestion_section{
 
     #food_card_section{
       div.card{
-        margin: 0px;  
+        min-width: 215px;
+        width: 100%;
+        margin-bottom: 20px;  
+        box-shadow: 0px 10px 13px -7px #cec3b8, 16px 13px 23px 8px rgba(255, 255, 255, 0.642);
       }
     }
   }
