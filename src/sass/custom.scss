@@ -131,7 +131,7 @@ section#suggestion_section{
       transform: translateY(-25px);
       transition: .5s;
       scale: 1.025;
-
+      box-shadow: 0px 10px 13px -7px #8f7116
     }
     
   }
@@ -174,7 +174,6 @@ section#suggestion_section{
         min-width: 215px;
         width: 100%;
         margin-bottom: 20px;  
-        box-shadow: 0px 10px 13px -7px #cec3b8, 16px 13px 23px 8px rgba(255, 255, 255, 0.642);
       }
     }
   }
