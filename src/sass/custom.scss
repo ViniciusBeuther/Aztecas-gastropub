@@ -130,10 +130,14 @@ section#suggestion_section{
 
   #food_card_section{
     
-    h5{
-      font-size: 32px;
-      padding-top: 16px;
+    .card{
+      h5{
+        font-size: 2rem;
+        padding-top: 16px;
+      }
     }
+
+
     .card:hover{
       transform: translateY(-25px);
       transition: .5s;
@@ -146,7 +150,8 @@ section#suggestion_section{
 
 //Styling our team section
 section#about_us_section{
-  
+  padding: 48px 24px;
+
   //===Dotted background===//
   background-color: $main_color;
   opacity: 1;
@@ -183,7 +188,7 @@ section#about_us_section{
 
 
 //Mobile adjustments
-@media (max-width: 768px){
+@media (max-width: 868px){
   //Home page titles
   section#home_page{
     h1{
@@ -199,23 +204,23 @@ section#about_us_section{
   section#suggestion_section{
     article{
       #main_marketing_message{
-        font-size: 1.825em;
+        font-size: 2.5rem;
         letter-spacing: 0.4px;
         line-height: 32px;
         width: 100%;
       }
 
-      #sub_marketng_message{
+      #sub_marketing_message{
         font-weight: 400;
         line-height: 25px; 
-        font-size: 1em;
+        font-size: 1.25rem;
         max-width: 600px;
         width: 100%;
       }
     }
 
     #food_card_section{
-      width: 100%;
+      //width: 100%;
       padding: 0px;
       margin: 0px;
       justify-content: center;
@@ -246,6 +251,8 @@ section#about_us_section{
   }
 
   section#about_us_section{
+    padding: 24px 12px;
+
     aside{
       display: none;
       img{
@@ -256,17 +263,20 @@ section#about_us_section{
     }
 
     article{
-      
-      h1{
-        width: 100%;
-        font-size: 3.5rem;
+      padding: 0px;
+      width: 100%;
+      p, h1, h3{
         text-align: center;
+      }
+
+      h1{
+        font-size: 3.5rem;
       }
       h3{
         font-size: 1.250rem;
-        text-align: center;
         margin-top: 5px;
       }
+
     }
   }
 }
