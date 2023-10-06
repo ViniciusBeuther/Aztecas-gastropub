@@ -89,14 +89,46 @@ section#suggestion_section article #main_marketing_message {
   letter-spacing: 0.84px;
   text-transform: uppercase;
 }
+section#suggestion_section article p {
+  font-size: 1.25rem;
+}
 section#suggestion_section #food_card_section h5, section#suggestion_section #food_card_section .h5 {
   font-size: 32px;
+  padding-top: 16px;
 }
 section#suggestion_section #food_card_section .card:hover {
   transform: translateY(-25px);
   transition: 0.5s;
   scale: 1.025;
   box-shadow: 0px 10px 13px -7px #e1ab0a;
+}
+
+section#about_us_section {
+  background-color: #FFCD1A;
+  opacity: 1;
+  background-image: radial-gradient(#FFA800 2px, transparent 2px), radial-gradient(#FFA800 2px, #FFCD1A 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  width: 100%;
+}
+section#about_us_section aside {
+  width: 100%;
+}
+section#about_us_section article {
+  width: 100%;
+}
+section#about_us_section article h1, section#about_us_section article .h1 {
+  font-size: 4.5rem;
+}
+section#about_us_section article h3, section#about_us_section article .h3 {
+  margin-top: -12px;
+  font-size: 2.125em;
+  margin-bottom: 12px;
+}
+section#about_us_section article p {
+  max-width: 750px;
+  width: 100%;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 768px) {
@@ -107,22 +139,58 @@ section#suggestion_section #food_card_section .card:hover {
     font-size: 2.75em;
   }
   section#suggestion_section article #main_marketing_message {
-    font-size: 1.625em;
+    font-size: 1.825em;
     letter-spacing: 0.4px;
     line-height: 32px;
     width: 100%;
   }
   section#suggestion_section article #sub_marketng_message {
     font-weight: 400;
-    line-height: 30px;
-    font-size: 1.313em;
+    line-height: 25px;
+    font-size: 1em;
     max-width: 600px;
     width: 100%;
+  }
+  section#suggestion_section #food_card_section {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
   }
   section#suggestion_section #food_card_section div.card {
     min-width: 215px;
     width: 100%;
+    max-width: 325px;
     margin-bottom: 20px;
+  }
+  section#suggestion_section #food_card_section div.card article .responsive-card-title {
+    padding: 0px;
+  }
+  section#suggestion_section #food_card_section div.card:hover {
+    scale: 1.015;
+    transform: translateY(-10px);
+  }
+  section#suggestion_section #food_card_section p {
+    display: none;
+  }
+  section#about_us_section aside {
+    display: none;
+  }
+  section#about_us_section aside img {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  section#about_us_section article h1, section#about_us_section article .h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  section#about_us_section article h3, section#about_us_section article .h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 5px;
   }
 }
 /*!

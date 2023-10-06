@@ -15,6 +15,7 @@ body{
 $main_color: #FFCD1A;
 $secundary_color: #180E04;
 $white_color: #F0F0F0;
+$orange-color: #FFA800;
 $mexican_font: "MexicanFont", sans-serif;
 
 $theme-colors: (
@@ -108,6 +109,7 @@ section#home_page{
   }
 }
 
+//Styling suggestion section
 section#suggestion_section{
   background-image:   url(../../assets/images/background-art.png);
   background-repeat: no-repeat;
@@ -120,12 +122,17 @@ section#suggestion_section{
       letter-spacing: 0.84px;
       text-transform: uppercase;
     }
+
+    p{
+      font-size: 1.25rem;
+    }
   }
 
   #food_card_section{
     
     h5{
       font-size: 32px;
+      padding-top: 16px;
     }
     .card:hover{
       transform: translateY(-25px);
@@ -136,6 +143,44 @@ section#suggestion_section{
     
   }
 }
+
+//Styling our team section
+section#about_us_section{
+  
+  //===Dotted background===//
+  background-color: $main_color;
+  opacity: 1;
+  background-image:  radial-gradient($orange-color 2px, transparent 2px), radial-gradient($orange-color 2px, $main_color 2px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
+//========================//
+  width: 100%;
+
+  aside{ //Team image
+    width: 100%;
+  }
+
+  article{
+    width: 100%;
+  
+    h1{
+      font-size: 4.5rem;
+    }
+  
+    h3{
+      margin-top: -12px;
+      font-size: 2.125em;
+      margin-bottom: 12px;
+    }
+
+    p{
+      max-width: 750px;
+      width: 100%;
+      font-size: 1.25rem;
+    }
+  }
+}
+
 
 //Mobile adjustments
 @media (max-width: 768px){
@@ -154,7 +199,7 @@ section#suggestion_section{
   section#suggestion_section{
     article{
       #main_marketing_message{
-        font-size: 1.625em;
+        font-size: 1.825em;
         letter-spacing: 0.4px;
         line-height: 32px;
         width: 100%;
@@ -162,18 +207,65 @@ section#suggestion_section{
 
       #sub_marketng_message{
         font-weight: 400;
-        line-height: 30px; 
-        font-size: 1.313em;
+        line-height: 25px; 
+        font-size: 1em;
         max-width: 600px;
         width: 100%;
       }
     }
 
     #food_card_section{
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      justify-content: center;
+      align-items: center;
+
       div.card{
         min-width: 215px;
         width: 100%;
-        margin-bottom: 20px;  
+        max-width:  325px;
+        margin-bottom: 20px; 
+
+        article{
+          .responsive-card-title{
+            padding: 0px;
+          }
+        }
+        
+      }
+      div.card:hover{
+        scale: 1.015;
+        transform: translateY(-10px);
+      }
+
+      p{
+        display: none;
+      }
+    }
+  }
+
+  section#about_us_section{
+    aside{
+      display: none;
+      img{
+        display: none;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+
+    article{
+      
+      h1{
+        width: 100%;
+        font-size: 3.5rem;
+        text-align: center;
+      }
+      h3{
+        font-size: 1.250rem;
+        text-align: center;
+        margin-top: 5px;
       }
     }
   }
