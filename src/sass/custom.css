@@ -136,6 +136,20 @@ section#food-images #donut-text {
   width: 50%;
   left: 50%;
 }
+section#food-images p#additional-text {
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+}
+section#food-images #food-galery-text-div {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+section#food-images #food-galery-title {
+  font-size: 2.625rem;
+}
 
 section#food-galery {
   display: grid;
@@ -152,6 +166,7 @@ section#food-galery .magret-text {
   top: -15%;
   left: 70%;
   width: 30%;
+  text-align: center;
 }
 section#food-galery p {
   font-size: 18px;
