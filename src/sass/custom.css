@@ -193,6 +193,17 @@ section#food-galery .div-5 {
   grid-area: div-5;
 }
 
+footer button#contact-footer-btn {
+  border: none;
+  border-radius: 12px;
+}
+footer button#contact-footer-btn:hover {
+  scale: 1.025;
+  transition: 0.5s;
+  transform: translateY(-12px);
+  box-shadow: 0px 10px 13px -7px #180E04, 16px 13px 23px 8px rgba(24, 14, 4, 0.126);
+}
+
 @media (max-width: 868px) {
   section#home_page h1, section#home_page .h1 {
     font-size: 3.75em;
