@@ -257,12 +257,12 @@ section#food-galery{
 }
 
 footer{
-  button#contact-footer-btn{
+  button.contact-footer-btn{
     border: none;
     border-radius: 12px;
   }
 
-  button#contact-footer-btn:hover{
+  button.contact-footer-btn:hover{
     scale: 1.025;
     transition: 0.5s;
     transform: translateY(-12px);

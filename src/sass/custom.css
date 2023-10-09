@@ -193,11 +193,11 @@ section#food-galery .div-5 {
   grid-area: div-5;
 }
 
-footer button#contact-footer-btn {
+footer button.contact-footer-btn {
   border: none;
   border-radius: 12px;
 }
-footer button#contact-footer-btn:hover {
+footer button.contact-footer-btn:hover {
   scale: 1.025;
   transition: 0.5s;
   transform: translateY(-12px);
