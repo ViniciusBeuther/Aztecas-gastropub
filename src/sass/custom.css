@@ -168,8 +168,8 @@ section#food-galery .magret-text {
   width: 30%;
   text-align: center;
 }
-section#food-galery p {
-  font-size: 18px;
+section#food-galery .magret-text p {
+  font-size: 90%;
 }
 section#food-galery img {
   -o-object-fit: cover;
