@@ -350,8 +350,17 @@ footer{
     article{
       padding: 0px;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
       p, h1, h3{
         text-align: center;
+      }
+
+      p{
+        width: 90%;
       }
 
       h1{
@@ -363,6 +372,35 @@ footer{
       }
 
     }
+  }
+
+  section#food-images{
+    div#food-galery-text-div{
+      width: 100%;
+    p{
+      width: 90%
+    }
+    }
+
+
+    section#food-galery{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-row-gap: 5px;
+      grid-column-gap: 5px;
+      div{
+        width: 100%;
+        div{
+          display: none;
+        }
+        
+      }
+    }
+  }
+
+  footer{
+    flex-direction: column-reverse;
+    padding: 15px 0px;
   }
 }
 
