@@ -27,14 +27,6 @@ body {
   font-size: 14px;
 }
 
-.btn-style:hover {
-  scale: 1.025;
-  transition: 0.5s;
-  background-color: #F0F0F0;
-  color: #180E04;
-  box-shadow: 0px 10px 13px -7px #180E04, 16px 13px 23px 8px rgba(24, 14, 4, 0.126);
-}
-
 header .dropdown-item:hover {
   background-color: #FFCD1A;
   transition: 0.5s;
@@ -49,14 +41,17 @@ header .nav-item {
 }
 header .nav-item .nav-link {
   color: #180E04;
+  font-size: 24px;
 }
 header .nav-item:hover {
   scale: 1.025;
   transition: 0.5s;
 }
 header .nav-item:hover .nav-link:hover {
-  color: #F0F0F0;
-  font-weight: bold;
+  scale: 1.015;
+  transition: 0.5s;
+  transform: translateY(-5px);
+  text-decoration: underline;
 }
 
 section#home_page {
@@ -157,9 +152,12 @@ section#food-galery {
   align-content: center;
   grid-template-columns: 0.225fr 0.225fr 0.225fr;
   grid-template-rows: 0.225fr 0.225fr 0.225fr;
-  gap: 15px 15px;
+  gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas: "div-1 div-2 div-2" "div-3 div-3 div-3" "div-4 div-4 div-5";
+  background-image: url(../../assets/images/background-art-large.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 section#food-galery .magret-text {
   position: relative;
@@ -191,6 +189,13 @@ section#food-galery .div-4 {
 }
 section#food-galery .div-5 {
   grid-area: div-5;
+}
+section#food-galery .div-hover-effect:hover {
+  scale: 1.025;
+  transition: 0.75s;
+  cursor: pointer;
+  transform: translateY(-20px);
+  filter: contrast(1);
 }
 
 footer button.contact-footer-btn {
@@ -289,6 +294,7 @@ footer button.contact-footer-btn:hover {
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 5px;
     grid-column-gap: 5px;
+    background: url(../../assets/images/background-art.png);
   }
   section#food-images section#food-galery div {
     width: 100%;

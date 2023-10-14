@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="../assets/images/Logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/sass/custom.css">
+    <!--AOS css library-->
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 <body class="bg-primary">
@@ -21,21 +24,14 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto w-100 d-flex align-items-center justify-content-end">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link mexican-font" href="#home_page">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <a class="nav-link mexican-font" href="#about_us_section">Sobre</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-menu-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Menu
-                    </a>
-                    <div class="dropdown-menu bg-dark_bg" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-white" href="#">Cardápio</a>
-                        <a class="dropdown-item text-white" href="#">Contato</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link mexican-font" href="https://drive.google.com/file/d/1lIm0jw9y2YRKRNpuIU3C6zsfk2Qd1BIQ/view" target="_blank">Cardapio</a>
                 </li>
-                <button class="btn-style text-center pl-2 pr-2 pt-1 pb-1 text-nowrap">Fazer pedido</button>
                 </ul>
             </div>
             </nav>
@@ -63,9 +59,6 @@
                 vão surpreender seu paladar e satisfazer seus desejos.
             </h3>
         </article>
-
-
-<!-- CARD CARROSEL MOBILE -->
 
 
         <!--Cards Secction-->
@@ -111,16 +104,14 @@
                     </article>
                 </div>
         </section>
-
-
     </section>
 
 <!-- ABOUT US SECTION HTML-->
     <section class="container-fluid bg-primary pt-5 d-flex d-flex justify-content-between" id="about_us_section">
         <aside class="">
-            <img src="../assets/images/AztecasTeam.png" alt="our-team-photo" class="jello-horizontal">
+            <img src="../assets/images/AztecasTeam.png" alt="our-team-photo" class="team-img">
         </aside>
-        <article class="d-flex flex-column justify-content-center">
+        <article class="d-flex flex-column justify-content-center soa-text">
             <h1 class="mexican-font text-dark_bg">
                 NOSSA HISTORIA
             </h1>
@@ -135,43 +126,46 @@
         </article>
     </section>
 
-<section id="food-images">
-    <div class="d-flex justify-content-center align-itens-center w-100 bg-dark_bg flex-column pt-5" id="food-galery-text-div">
-        <h2 class="mexican-font text-center text-primary bg-dark_bg w-100" id="food-galery-title">
-            Autenticos sabores mexicanos
-        </h2>   
-    
-        <p id="additional-text" class="text-white">
-            Nosso menu é composto por pratos feitos com ingredientes frescos e de alta qualidade, oferecemos uma grande variedade de pratos clássicos que eu tenho certeza de que vão satisfazer todos os paladares!
-        </p>
-    </div>
+    <!-- Food gallery -->
+    <section id="food-images">
+        <div class="d-flex justify-content-center align-itens-center w-100 bg-dark_bg flex-column pt-5" id="food-galery-text-div">
+            <h2 class="mexican-font text-center text-primary bg-dark_bg w-100 soa-text" id="food-galery-title">
+                Autenticos sabores mexicanos
+            </h2>   
+        
+            <p id="additional-text" class="text-white soa-text">
+                Nosso menu é composto por pratos feitos com ingredientes frescos e de alta qualidade, oferecemos uma grande variedade de pratos clássicos que eu tenho certeza de que vão satisfazer todos os paladares!
+            </p>
+        </div>
 
-        <section id="food-galery" class="grid-parent container-fluid bg-dark_bg pt-5 pl-4 pr-3 pb-4">
-            <div class="div-1 bg-dark_bg">
-                <img src="../assets/images/image-galery/Magret.png" alt="magret" class="img-fluid">
-                <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Magret</div>
-            </div>
-    
-            <div class="div-2 bg-dark_bg">
-                <img src="../assets/images/image-galery/hot-dog.png" alt="hotdog">
-                <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Hot dog Aztecas</div>
-            </div>
-            <div class="div-3 img-fluid bg-dark_bg">
-                <img src="../assets/images/image-galery/Nachos.png" alt="nachos">
-                <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Nachos Calientes</div>
-            </div>
-            <div class="div-4 bg-dark_bg">
-                <img src="../assets/images/image-galery/crocant-sticks.png" alt="crocant-sticks">
-                <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Palitos Crocantes</div>
-            </div>
-            <div class="div-5 bg-dark_bg">
-                <img src="../assets/images/image-galery/donut-burguer.png" alt="donut-burguer">
-                <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap" id="donut-text">Donut Burguer</div>
-            </div>
-        </section>
-    
-</section>
+            <section id="food-galery" class="grid-parent container-fluid bg-dark_bg pt-5 pl-4 pr-3 pb-4">
+                <div class="div-1 bg-dark_bg div-hover-effect">
+                    <img src="../assets/images/image-galery/Magret.png" alt="magret" class="img-fluid">
+                    <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Magret</div>
+                </div>
+        
+                <div class="div-2 bg-dark_bg div-hover-effect">
+                    <img src="../assets/images/image-galery/hot-dog.png" alt="hotdog">
+                    <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Hot dog Aztecas</div>
 
+                </div>
+                <div class="div-3 img-fluid bg-dark_bg div-hover-effect">
+                    <img src="../assets/images/image-galery/Nachos.png" alt="nachos">
+                    <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Nachos Calientes</div>
+                </div>
+                <div class="div-4 bg-dark_bg div-hover-effect">
+                    <img src="../assets/images/image-galery/crocant-sticks.png" alt="crocant-sticks">
+                    <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap">Palitos Crocantes</div>
+                </div>
+                <div class="div-5 bg-dark_bg div-hover-effect">
+                    <img src="../assets/images/image-galery/donut-burguer.png" alt="donut-burguer">
+                    <div class="mexican-font bg-primary text-dark_bg p-2 magret-text text-nowrap" id="donut-text">Donut Burguer</div>
+                </div>
+            </section>
+        
+    </section>
+
+    <!-- Footer -->
     <footer class="container bg-primary d-flex align-items-center justify-content-between">
         <div class="d-flex flex-column align-items-center pt-3">
             <h3 class="mexican-font pb-1 text-dark_bg">AZTECAS GASTROPUB</h3>
@@ -189,7 +183,10 @@
         <div class="d-flex align-items-center justify-content-between flex-column">
             <p class="text-dark_bg text-center">Siga-nos nas redes sociais!</p>
             <button class="d-flex justify-content-center align-items-center bg-dark_bg p-2 contact-footer-btn">
-                <img src="../assets/images/Instagram_icon.svg" alt="Instagram Icon">
+                <a href="https://www.instagram.com/aztecasgastropub/" target="_blank">
+                    <img src="../assets/images/Instagram_icon.svg" alt="Instagram Icon">
+                </a>
+                
             </button>
         </div>
     </footer>
@@ -198,6 +195,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="../src/js/index.js"></script>
+    <script src="./js/index.js"></script>    
 </body>
 </html>

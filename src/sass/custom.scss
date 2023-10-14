@@ -42,15 +42,10 @@ $theme-colors: (
 }
 
 //Buttons hover
-.btn-style:hover{
-  scale: 1.025;
-  transition: 0.5s;
-  background-color: $white_color;
-  color: $secundary_color;
-  box-shadow: 0px 10px 13px -7px #180E04, 16px 13px 23px 8px rgba(24, 14, 4, 0.126);
-}
 
 header{
+
+  
   //Styling the menu's dropdown background
   .dropdown-item:hover{
     background-color: $main_color;
@@ -69,8 +64,8 @@ header{
     //The nav text, like "Home", "About", etc
     .nav-link{
       color: $secundary_color;
-    }
-    
+      font-size: 24px;
+    }    
   }
   
   //Styling the nav itens hover
@@ -79,8 +74,10 @@ header{
     transition: .5s;
 
     .nav-link:hover{
-      color: $white_color;
-      font-weight: bold;
+      scale: 1.015;
+      transition: .5s;
+      transform: translateY(-5px);
+      text-decoration: underline;
     }
   }
 
@@ -219,13 +216,17 @@ section#food-galery{
     align-content: center;
     grid-template-columns: 0.225fr 0.225fr 0.225fr;
     grid-template-rows: 0.225fr 0.225fr 0.225fr;
-    gap: 15px 15px;
+    gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
       "div-1 div-2 div-2"
       "div-3 div-3 div-3"
       "div-4 div-4 div-5";
-  
+
+    background-image:   url(../../assets/images/background-art-large.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
   .magret-text{
     position: relative;
     top: -15%;
@@ -246,15 +247,19 @@ section#food-galery{
   }
 
   .div-1 { grid-area: div-1; }
-  
   .div-2 { grid-area: div-2; }
-  
   .div-3 { grid-area: div-3; }
-  
   .div-4 { grid-area: div-4; }
-  
   .div-5 { grid-area: div-5; }
   
+  .div-hover-effect:hover{
+    scale: 1.025;
+    transition: 0.75s;
+    cursor: pointer;
+    transform: translateY(-20px);
+    filter: contrast(1);
+  }
+
 }
 
 footer{
@@ -388,6 +393,7 @@ footer{
       grid-template-rows: 1fr 1fr 1fr;
       grid-row-gap: 5px;
       grid-column-gap: 5px;
+      background: url(../../assets/images/background-art.png);
       div{
         width: 100%;
         div{
