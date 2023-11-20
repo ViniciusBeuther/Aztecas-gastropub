@@ -27,16 +27,8 @@ body {
   font-size: 14px;
 }
 
-.btn-style:hover {
-  scale: 1.025;
-  transition: 0.5s;
-  background-color: #F0F0F0;
-  color: #180E04;
-  box-shadow: 0px 10px 13px -7px #180E04, 16px 13px 23px 8px rgba(24, 14, 4, 0.126);
-}
-
 header .dropdown-item:hover {
-  background-color: #FFCD1A;
+  background-color: #CF8C09;
   transition: 0.5s;
 }
 header .nav-item {
@@ -49,14 +41,17 @@ header .nav-item {
 }
 header .nav-item .nav-link {
   color: #180E04;
+  font-size: 24px;
 }
 header .nav-item:hover {
   scale: 1.025;
   transition: 0.5s;
 }
 header .nav-item:hover .nav-link:hover {
-  color: #F0F0F0;
-  font-weight: bold;
+  scale: 1.015;
+  transition: 0.5s;
+  transform: translateY(-5px);
+  text-decoration: underline;
 }
 
 section#home_page {
@@ -105,9 +100,9 @@ section#suggestion_section #food_card_section .card:hover {
 
 section#about_us_section {
   padding: 48px 24px;
-  background-color: #FFCD1A;
+  background-color: #CF8C09;
   opacity: 1;
-  background-image: radial-gradient(#FFA800 2px, transparent 2px), radial-gradient(#FFA800 2px, #FFCD1A 2px);
+  background-image: radial-gradient(#FFA800 2px, transparent 2px), radial-gradient(#FFA800 2px, #CF8C09 2px);
   background-size: 80px 80px;
   background-position: 0 0, 40px 40px;
   width: 100%;
@@ -157,9 +152,12 @@ section#food-galery {
   align-content: center;
   grid-template-columns: 0.225fr 0.225fr 0.225fr;
   grid-template-rows: 0.225fr 0.225fr 0.225fr;
-  gap: 15px 15px;
+  gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas: "div-1 div-2 div-2" "div-3 div-3 div-3" "div-4 div-4 div-5";
+  background-image: url(../../assets/images/background-art-large.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 section#food-galery .magret-text {
   position: relative;
@@ -168,8 +166,8 @@ section#food-galery .magret-text {
   width: 30%;
   text-align: center;
 }
-section#food-galery p {
-  font-size: 18px;
+section#food-galery .magret-text p {
+  font-size: 90%;
 }
 section#food-galery img {
   -o-object-fit: cover;
@@ -191,6 +189,13 @@ section#food-galery .div-4 {
 }
 section#food-galery .div-5 {
   grid-area: div-5;
+}
+section#food-galery .div-hover-effect:hover {
+  scale: 1.025;
+  transition: 0.75s;
+  cursor: pointer;
+  transform: translateY(-20px);
+  filter: contrast(1);
 }
 
 footer button.contact-footer-btn {
@@ -260,9 +265,16 @@ footer button.contact-footer-btn:hover {
   section#about_us_section article {
     padding: 0px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   section#about_us_section article p, section#about_us_section article h1, section#about_us_section article .h1, section#about_us_section article h3, section#about_us_section article .h3 {
     text-align: center;
+  }
+  section#about_us_section article p {
+    width: 90%;
   }
   section#about_us_section article h1, section#about_us_section article .h1 {
     font-size: 3.5rem;
@@ -270,6 +282,29 @@ footer button.contact-footer-btn:hover {
   section#about_us_section article h3, section#about_us_section article .h3 {
     font-size: 1.25rem;
     margin-top: 5px;
+  }
+  section#food-images div#food-galery-text-div {
+    width: 100%;
+  }
+  section#food-images div#food-galery-text-div p {
+    width: 90%;
+  }
+  section#food-images section#food-galery {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    background: url(../../assets/images/background-art.png);
+  }
+  section#food-images section#food-galery div {
+    width: 100%;
+  }
+  section#food-images section#food-galery div div {
+    display: none;
+  }
+  footer {
+    flex-direction: column-reverse;
+    padding: 15px 0px;
   }
 }
 /*!
@@ -302,11 +337,11 @@ footer button.contact-footer-btn:hover {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #FFCD1A;
+  --bs-primary: #CF8C09;
   --bs-danger: #ff4136;
   --bs-dark_bg: #180E04;
   --bs-white: #F0F0F0;
-  --bs-primary-rgb: 255, 205, 26;
+  --bs-primary-rgb: 207, 140, 9;
   --bs-danger-rgb: 255, 65, 54;
   --bs-dark_bg-rgb: 24, 14, 4;
   --bs-white-rgb: 240, 240, 240;
@@ -3273,19 +3308,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #FFCD1A;
-  --bs-btn-border-color: #FFCD1A;
+  --bs-btn-bg: #CF8C09;
+  --bs-btn-border-color: #CF8C09;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #ffd53c;
-  --bs-btn-hover-border-color: #ffd231;
-  --bs-btn-focus-shadow-rgb: 217, 174, 22;
+  --bs-btn-hover-bg: #d69d2e;
+  --bs-btn-hover-border-color: #d49822;
+  --bs-btn-focus-shadow-rgb: 176, 119, 8;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #ffd748;
-  --bs-btn-active-border-color: #ffd231;
+  --bs-btn-active-bg: #d9a33a;
+  --bs-btn-active-border-color: #d49822;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #FFCD1A;
-  --bs-btn-disabled-border-color: #FFCD1A;
+  --bs-btn-disabled-bg: #CF8C09;
+  --bs-btn-disabled-border-color: #CF8C09;
 }
 
 .btn-danger {
@@ -3340,19 +3375,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #FFCD1A;
-  --bs-btn-border-color: #FFCD1A;
+  --bs-btn-color: #CF8C09;
+  --bs-btn-border-color: #CF8C09;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #FFCD1A;
-  --bs-btn-hover-border-color: #FFCD1A;
-  --bs-btn-focus-shadow-rgb: 255, 205, 26;
+  --bs-btn-hover-bg: #CF8C09;
+  --bs-btn-hover-border-color: #CF8C09;
+  --bs-btn-focus-shadow-rgb: 207, 140, 9;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #FFCD1A;
-  --bs-btn-active-border-color: #FFCD1A;
+  --bs-btn-active-bg: #CF8C09;
+  --bs-btn-active-border-color: #CF8C09;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #FFCD1A;
+  --bs-btn-disabled-color: #CF8C09;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #FFCD1A;
+  --bs-btn-disabled-border-color: #CF8C09;
   --bs-gradient: none;
 }
 
@@ -6880,8 +6915,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: RGBA(255, 215, 72, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(255, 215, 72, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(217, 163, 58, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(217, 163, 58, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-danger {
